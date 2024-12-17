@@ -1,0 +1,30 @@
+version: "3.8"
+
+services:
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80" # Map NGINX (frontend) to localhost:3000
+    depends_on:
+      - backend # Wait for backend to start
+    volumes:
+      - ./frontend:/app
+    networks:
+      - fullstack-network
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000" # Expose Flask on localhost:5000
+    volumes:
+      - ./backend:/app # Mount the backend directory for live updates
+    networks:
+      - fullstack-network
+
+networks:
+  fullstack-network:
+    driver: bridge

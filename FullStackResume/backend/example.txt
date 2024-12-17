@@ -1,0 +1,174 @@
+%----------RESUME START----------
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+% Uncomment the font you'd like to use
+% \usepackage[sfdefault]{FiraSans} % sans-serif
+% \usepackage[default]{sourcesanspro} % sans-serif
+% \usepackage{CormorantGaramond} % serif
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1in}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated PDFs are machine-readable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemii{$\bullet$} % Ensures bullets are consistent
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in, label=\textbullet]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\LARGE \scshape Andrew Ebert -- Data Science Intern} \\ \vspace{1pt}
+    \small (720)627-9163 $|$ \href{mailto:andrew.ebert12@yahoo.com}{\underline{andrew.ebert12@yahoo.com}} $|$ 
+    \href{https://www.linkedin.com/in/andrew-e-ebert}{\underline{linkedin.com/in/andrew-e-ebert}} $|$
+    \href{https://github.com/aebes5}{\underline{github.com/aebes5}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {University of Colorado, Denver}{Denver, CO}
+    {Bachelor of Arts in Computer Science, Bachelor of Science in Mathematics}{Jan 2022 -- May 2025}
+    \resumeItemListStart
+      \resumeItem{\textbf{GPA:} 3.73/4}
+      \resumeItem{\textbf{Relevant Courses:} Fundamentals of Computing, Data Structures, Algorithms, Database Concepts, Fundamentals of Unix, Intro to Optimization, NLP \& LLM, Software Engineering, Numerical Analysis, Statistical Theory, Calculus, Linear Algebra, Differential Equations, Math Clinic, Data Science, Machine Learning, Graph Theory, Intro to Tableau}
+      \resumeItem{\textbf{Future Plans:} Actively applying to CU Denver's 4+1 Data Science MS program with graduation date of May 2026.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Student Researcher}{Denver, CO}
+    {University of Colorado, Denver -- Physics}{June 2023 -- July 2024}
+    \resumeItemListStart
+      \resumeItem{Automated the execution of 18 jobs on supercomputers using JSON.}
+      \resumeItem{Compiled code, primarily using Intel compilers and Intel MKL, to run high-performance computing jobs and optimize performance.}
+      \resumeItem{Developed machine learning models (Random Forest and Binary Classification) using Python to classify 4 classes of electronic/atomic transitions.}
+      \resumeItem{Analyzed and visualized complex datasets, collaborating with a team to create scripts using Matplotlib and Pandas.}
+      \resumeItem{Participated in a group research presentation on high-performance computing at CU Denver’s 2023 Research and Creative Activities Symposium (\href{https://symposium.foragerone.com/2023-racas/presentations/56593}{\underline{RaCAS Presentation}}).}
+    \resumeItemListEnd
+    
+  \resumeSubheading
+    {Construction Laborer}{Aurora, CO}
+    {Accell Construction}{Aug 2021 -- May 2023}
+    \resumeItemListStart
+      \resumeItem{Applied a strong attention to detail and effective time management to efficiently complete tasks while ensuring the client’s specifications were met.}
+      \resumeItem{Collaborated with a team, balancing individual tasks with collective goals of ensuring projects were completed on time.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+    
+  \resumeProjectHeading
+    {\textbf{Fitness Tracker App} $|$ \emph{Java, Git}}{}
+    \resumeItemListStart
+      \resumeItem{Led a team of three individuals on a class project to develop an Android application using Java.}
+      \resumeItem{Managed version control using Git to ensure consistency across contributions.}
+      \resumeItem{Facilitated communication between team members to ensure all project deadlines were met on time.}
+    \resumeItemListEnd
+    
+  \resumeProjectHeading
+    {\textbf{Apartment Database} $|$ \emph{SQL, MySQL}}{}
+    \resumeItemListStart
+      \resumeItem{Designed and implemented a relational database to simulate operations within an apartment complex.}
+      \resumeItem{Created and executed SQL queries using MySQL to manage tenants, apartments, and maintenance records for efficient retrieval and data management with over 1000 manual entries.}
+    \resumeItemListEnd
+    
+  \resumeProjectHeading
+    {\textbf{Portfolio Optimization} $|$ \emph{Python, Python API, Gurobi}}{}
+    \resumeItemListStart
+      \resumeItem{Utilized Python APIs to web scrape companies listed in the S\&P 500.}
+      \resumeItem{Formulated an optimization problem to maximize portfolio returns, ensuring the selection of at least 25 stocks, each contributing to no more than 20\% of the total, to reduce volatility.}
+      \resumeItem{Employed Gurobi to solve the problem with a maximum allowable variance of 7\%.}
+    \resumeItemListEnd
+    
+\resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\resumeSubHeadingListStart
+    \resumeItemListStart
+      \resumeItem{\textbf{Programming Languages:} Python, SQL, R, C++, C, Java}
+      \resumeItem{\textbf{Tools \& Technologies:} Word, PowerPoint, Git, Github, Linux, Unix, MySQL}
+      \resumeItem{\textbf{Data Visualization:} Matplotlib, Excel, Tableau, Pandas}
+      \resumeItem{\textbf{Optimization:} NumPy, SciPy, Pyomo}
+      \resumeItem{\textbf{Machine \& Deep Learning:} Scikit-learn, PyTorch}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\end{document}
