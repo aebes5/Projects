@@ -10,6 +10,7 @@ A curated collection of personal and some of my bigger academic projects — use
 |---------|-------------|--------------|
 | [CombiningNotes](./CombiningNotes) | Automated merging and renaming of lecture PDFs | Python, File I/O |
 | [FullStackResume](./FullStackResume) | Resume tailoring web app with front-end and back-end integration | HTML/CSS, JavaScript, Flask, Docker |
+| [PortfolioWebsite](./PortfolioWebsite) | Portfolio web app, first time experimenting with front-end integration | HTML/CSS, JavaScript, React |
 | [Research](./Research) | Includes machine learning experiments and some insights into my research project | Python, Scikit-learn, ML |
 
 ---
